@@ -9,12 +9,6 @@
 		<label for="name">Name:</label>
 		<input type="text" id="name" name="name" required>
 		
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
-		
-		<label for="message">Message:</label>
-		<textarea id="message" name="message" required></textarea>
-		
 		<button type="submit">Submit</button>
 	</form>
 	<script>
@@ -29,12 +23,9 @@
 			// Get the user's name and email from the input fields
 			const nameInput = document.getElementById('name');
 			const name = nameInput.value;
-			const emailInput = document.getElementById('email');
-			const email = emailInput.value;
 			
 			// Store the user's name and email in localStorage
 			localStorage.setItem('name', name);
-			localStorage.setItem('email', email);
 			
 			// Redirect to the personalized message page
 			window.location.href = 'message.html';
